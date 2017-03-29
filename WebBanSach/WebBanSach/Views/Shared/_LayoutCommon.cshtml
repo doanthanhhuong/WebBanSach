@@ -1,0 +1,152 @@
+﻿@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<title>Book shop</title>*@
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="~/Content/WebBanSach.css">
+</head>
+<body>
+    <div class="all">
+        <div class="header-all col-a-12 col-b-12 col-12 col-m-12">
+            <div class="header-top col-a-12 col-b-12 col-12 col-m-12">
+                <div class="header-user col-a-6 col-b-6 col-6 col-m-6">
+                    <!-- 	/* chua lam xong */ -->
+                </div>
+
+            </div>
+
+
+            <div class="header-main col-a-12 col-b-12 col-12 col-m-12">
+
+                <button class="logo">
+                    <i class="icon-menu"></i>
+                </button>
+                <div class="main-logo  col-m-2">
+
+                    <h1>
+                        <a href="" class="logo1  col-m-9">
+                            <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.4.9/img/logo.svg" alt="Bookshop.com" class="imglogo  col-m-9">
+                        </a>
+                    </h1>
+
+                </div>
+                <div class="search-main col-a-12 col-b-12 col-9 col-m-9">
+                    <form id="book-search-form col-a-8 col-b-8 col-8 col-m-8">
+
+                        <input type="text" placeholder="Search your book" name="TextSearch" value="" class="search-main-text col-6 col-m-6">
+                        <button type="submit" class="button-search col-1 col-m-1">
+                            <span class="text">Search</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="second-header col-a-12 col-b-12 col-12 col-m-12">
+            <div class="second-header-main col-a-11 col-b-11 col-11 col-m-11">
+                <div class="">
+                    @*<ul  class="col-8 col-a-8 col-b-8 col-m-8">*@
+                        <li id="home" class="col-a-1 col-b-1 col-1 col-m-1">
+                            <!-- <a class="homeimg text" href=""> -->
+
+                            <a href="Bookshop">
+                                <span class="text maintextpage">Main Page</span>
+                            </a>
+                            <!-- </a> -->
+
+
+                        </li>
+
+                   
+                   
+                         
+                        <li><a href="BestSeller">BestSellers</a></li>
+                        <li><a href="CommingSoon">Comming Soon</a></li>
+                        <li><a href="HightLight">HightLight</a></li>
+                        <li><a href="">New in paperback</a></li>
+                        <li><a href="">Book we public</a></li>
+                 @*  </ul>*@
+                    <div class="right-section col-a-4 col-b-4 col-m-4 col-4">
+                        <select name="selectCurrency" id="selectCurrency" class="selectMoney col-a-6 col-b-6 col-6  col-m-6">
+
+                            <option value="AUD">$&nbsp;Australian Dollar</option>
+                            <option value="EUR">€&nbsp;Euro</option>
+                            <option value="USD" selected="selected">$&nbsp;US Dollar</option>
+                            <option value="VND">€&nbsp;VND</option>
+
+                        </select>
+                        <div class="basket">
+                            <span class="total">A$0.00 |</span>
+                            <a rel="nofollow" href="/basket" class="basket-btn">
+                                <span class="item-count">
+                                    0
+                                </span>
+                                <span class="item-text">
+
+                                    items
+                                </span>
+                                <i class="icon-basket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content col-11 col-m-11">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <div class="footeral">
+            <h4>Follow us</h4>
+        </div>
+        <div class="social col-3">
+            <ul class="social-connection">
+                <li>
+                    <a rel="" href="https://www.facebook.com/">
+                        @*<img src="image/facebook.png" alt="">*@
+                        <img src="~/image/facebook.png" />
+                    </a>
+                </li>
+                <li>
+                    <a rel="" href="https://vn.yahoo.com/">
+
+                        <img src="~/image/yahoo.png" />
+                    </a>
+                </li>
+                <li>
+                    <a rel="" href="https://plus.google.com/">
+                        <img src="~/image/googleplus.png" />
+                    </a>
+                </li>
+                <li>
+                    <a rel="" href="https://twitter.com/">
+                        <img src="~/image/twitter.png" />
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="footer-end col-12 col-m-12">
+            <h4>Copyright by Bookshop.com</h4>
+        </div>
+    </div>
+</body>
+</html>
